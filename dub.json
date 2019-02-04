@@ -1,0 +1,20 @@
+{
+	"description": "Some snippets of D code",
+	"license": "MIT",
+	"authors": [
+		"samathy"
+	],
+    "dependencies": {
+        "blerp": "*"
+    },
+	"copyright": "Copyright © 2019, samathy",
+	"name": "dlang-snippets",
+    "configurations" : [
+        {
+            "name": "parametrized-testing",
+            "versions": ["parametrizedtesting"]
+
+        } 
+    ]
+
+}
