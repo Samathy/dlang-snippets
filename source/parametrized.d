@@ -14,11 +14,11 @@ version(parametrizedtesting)
 {
     unittest
     {
-        static immutable auto testcases = [[1,2],[2,3],[3,4]];
+        static immutable auto testcases = [[1,2, 3],[2,3, 5],[3,4, 7]];
 
         static foreach (testcase; testcases)
         {
-            mixin("assert(foo(testcase[0], testcase[1]) == testcase[0] + testcase[1]); writeln(\"Tested\");");
+            mixin("assert(foo(testcase[0], testcase[1]) == testcase[2]); writeln(\"Tested\");");
         }
 
     }
